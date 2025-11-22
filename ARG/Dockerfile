@@ -1,2 +1,8 @@
 ARG VERSION 
 FROM almalinux:${VERSION:-9}
+ARG COURSE="DOCKER" \
+    TRAINER="SINDHUJA"
+RUN echo "TRAINER: ${TRAINER}, Course: ${COURSE}""
+CMD ["sleep","1000"]
+
+
